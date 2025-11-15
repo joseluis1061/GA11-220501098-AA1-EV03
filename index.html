@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidencia Calidad de Software - ADSO SENA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <h1>SENA</h1>
+                <p>Servicio Nacional de Aprendizaje</p>
+            </div>
+            <div class="program-info">
+                <h2>Análisis y Desarrollo de Sistemas de Información</h2>
+                <div class="student-info">
+                    <p><strong>Estudiante:</strong> José Luis Zúñiga</p>
+                    <p><strong>Instructor:</strong> Julián Loaiza</p>
+                    <p><strong>Ficha:</strong> 2885494</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#introduccion" class="nav-link">Introducción</a></li>
+                <li><a href="#fundamentos" class="nav-link">Fundamentos</a></li>
+                <li><a href="#buenas-practicas" class="nav-link">Buenas Prácticas</a></li>
+                <li><a href="#instrumentos" class="nav-link">Instrumentos</a></li>
+                <li><a href="#proceso-personal" class="nav-link">Proceso Personal</a></li>
+                <li><a href="#conclusiones" class="nav-link">Conclusiones</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">Aplicación de Buenas Prácticas de Calidad</h1>
+                <h2 class="hero-subtitle">Disciplinas de Calidad de Software</h2>
+                <p class="hero-description">
+                    GA11-220501098-AA1-EV02: Documentación y aplicación de buenas prácticas 
+                    para optimizar el desarrollo de software
+                </p>
+                <div class="hero-buttons">
+                    <a href="#introduccion" class="btn btn-primary">Explorar Contenido</a>
+                    <a href="#instrumentos" class="btn btn-secondary">Ver Instrumentos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section id="introduccion" class="section introduction-section">
+            <div class="container">
+                <h2 class="section-title">Introducción</h2>
+                <div class="content-card">
+                    <p>
+                        La calidad del software es un aspecto fundamental en el desarrollo de sistemas de información 
+                        modernos. En un entorno tecnológico cada vez más exigente, la implementación de buenas prácticas 
+                        de calidad no solo garantiza productos robustos y confiables, sino que también optimiza los 
+                        procesos de desarrollo, reduce costos y mejora la satisfacción del cliente.
+                    </p>
+                    <p>
+                        Esta evidencia presenta una compilación de métodos, técnicas y herramientas que permiten 
+                        optimizar las actividades del desarrollo de software. A través de una documentación técnica 
+                        adecuada, se facilita el acceso a la información y se reduce significativamente la curva de 
+                        aprendizaje para los equipos de desarrollo.
+                    </p>
+                    <p>
+                        El presente documento aborda los fundamentos de calidad de software, la selección de buenas 
+                        prácticas basadas en marcos de trabajo reconocidos, el diseño de instrumentos de calidad, y 
+                        la aplicación del Proceso Personal de Desarrollo de Software (PSP) como metodología para 
+                        mejorar continuamente la calidad del software desarrollado.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fundamentos Section -->
+        <section id="fundamentos" class="section fundamentos-section">
+            <div class="container">
+                <h2 class="section-title">Fundamentos de Calidad de Software</h2>
+                
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>¿Qué es la Calidad de Software?</h3>
+                        <p>
+                            La calidad de software se define como el grado en que un sistema, componente o proceso 
+                            cumple con los requisitos especificados y las necesidades o expectativas del cliente. 
+                            Es un concepto multidimensional que abarca aspectos funcionales, técnicos y de experiencia 
+                            de usuario.
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>Dimensiones de la Calidad</h3>
+                        <ul class="quality-dimensions">
+                            <li><strong>Funcionalidad:</strong> Capacidad del software para proporcionar las funciones que satisfacen las necesidades establecidas</li>
+                            <li><strong>Confiabilidad:</strong> Capacidad de mantener un nivel de rendimiento específico bajo condiciones establecidas</li>
+                            <li><strong>Usabilidad:</strong> Facilidad de uso y aprendizaje del software</li>
+                            <li><strong>Eficiencia:</strong> Relación entre el rendimiento del software y los recursos utilizados</li>
+                            <li><strong>Mantenibilidad:</strong> Facilidad con la que el software puede ser modificado</li>
+                            <li><strong>Portabilidad:</strong> Capacidad del software para ser transferido a diferentes entornos</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>Importancia de la Calidad</h3>
+                        <ul>
+                            <li>Reducción de costos de mantenimiento y corrección de errores</li>
+                            <li>Aumento de la satisfacción del cliente</li>
+                            <li>Mejora de la reputación y competitividad</li>
+                            <li>Cumplimiento de estándares y normativas</li>
+                            <li>Reducción de riesgos en producción</li>
+                            <li>Optimización del ciclo de vida del desarrollo</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>Estándares de Calidad</h3>
+                        <p>
+                            <strong>ISO/IEC 25010:</strong> Define el modelo de calidad del producto software, 
+                            estableciendo características y subcaracterísticas de calidad.
+                        </p>
+                        <p>
+                            <strong>ISO 9001:</strong> Sistema de gestión de calidad aplicable a organizaciones 
+                            de desarrollo de software.
+                        </p>
+                        <p>
+                            <strong>CMMI:</strong> Modelo de madurez de capacidades que ayuda a mejorar los procesos 
+                            de desarrollo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buenas Prácticas Section -->
+        <section id="buenas-practicas" class="section buenas-practicas-section">
+            <div class="container">
+                <h2 class="section-title">Buenas Prácticas de Calidad</h2>
+                
+                <div class="practices-intro content-card">
+                    <p>
+                        Las buenas prácticas de calidad son enfoques probados que ayudan a los equipos de desarrollo 
+                        a crear software de alta calidad de manera consistente. Estas prácticas se derivan de marcos 
+                        de trabajo reconocidos y la experiencia acumulada en la industria.
+                    </p>
+                </div>
+
+                <div class="practices-grid">
+                    <div class="practice-card">
+                        <div class="practice-number">01</div>
+                        <h3>Revisión de Código (Code Review)</h3>
+                        <p>
+                            Proceso sistemático de examinar el código fuente por otros desarrolladores para detectar 
+                            errores, mejorar la calidad y compartir conocimiento.
+                        </p>
+                        <ul>
+                            <li>Implementar revisiones por pares</li>
+                            <li>Utilizar herramientas como GitHub Pull Requests</li>
+                            <li>Establecer checklist de revisión</li>
+                            <li>Documentar hallazgos y recomendaciones</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-number">02</div>
+                        <h3>Pruebas Automatizadas</h3>
+                        <p>
+                            Implementación de diferentes niveles de pruebas automatizadas para garantizar la 
+                            funcionalidad y prevenir regresiones.
+                        </p>
+                        <ul>
+                            <li>Pruebas unitarias (JUnit, Jest)</li>
+                            <li>Pruebas de integración</li>
+                            <li>Pruebas end-to-end (E2E)</li>
+                            <li>Cobertura de código mínima del 80%</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-number">03</div>
+                        <h3>Integración Continua (CI/CD)</h3>
+                        <p>
+                            Automatización del proceso de construcción, prueba y despliegue del software para 
+                            detectar problemas tempranamente.
+                        </p>
+                        <ul>
+                            <li>Configuración de pipelines automatizados</li>
+                            <li>Ejecución automática de pruebas</li>
+                            <li>Despliegues automatizados</li>
+                            <li>Monitoreo continuo de calidad</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-number">04</div>
+                        <h3>Estándares de Codificación</h3>
+                        <p>
+                            Establecimiento y seguimiento de convenciones de código consistentes para mejorar 
+                            la legibilidad y mantenibilidad.
+                        </p>
+                        <ul>
+                            <li>Definir guías de estilo (Google Style Guide)</li>
+                            <li>Uso de linters (ESLint, SonarLint)</li>
+                            <li>Formateo automático de código</li>
+                            <li>Nomenclatura consistente</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-number">05</div>
+                        <h3>Gestión de Configuración</h3>
+                        <p>
+                            Control de versiones y gestión de cambios para mantener la integridad del código 
+                            y facilitar la colaboración.
+                        </p>
+                        <ul>
+                            <li>Uso de Git para control de versiones</li>
+                            <li>Estrategias de branching (Git Flow)</li>
+                            <li>Gestión de releases y versiones</li>
+                            <li>Documentación de cambios</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-number">06</div>
+                        <h3>Documentación Técnica</h3>
+                        <p>
+                            Creación y mantenimiento de documentación clara y actualizada que facilite el 
+                            entendimiento y evolución del software.
+                        </p>
+                        <ul>
+                            <li>Documentación de arquitectura</li>
+                            <li>Comentarios de código significativos</li>
+                            <li>Documentación de API</li>
+                            <li>Manuales de usuario y despliegue</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-number">07</div>
+                        <h3>Análisis Estático de Código</h3>
+                        <p>
+                            Uso de herramientas automáticas para detectar problemas potenciales sin ejecutar 
+                            el código.
+                        </p>
+                        <ul>
+                            <li>SonarQube para análisis de calidad</li>
+                            <li>Detección de code smells</li>
+                            <li>Identificación de vulnerabilidades</li>
+                            <li>Métricas de complejidad ciclomática</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-card">
+                        <div class="practice-number">08</div>
+                        <h3>Gestión de Defectos</h3>
+                        <p>
+                            Proceso sistemático para identificar, registrar, priorizar y resolver defectos 
+                            del software.
+                        </p>
+                        <ul>
+                            <li>Uso de sistemas de tracking (Jira)</li>
+                            <li>Clasificación y priorización de bugs</li>
+                            <li>Análisis de causa raíz</li>
+                            <li>Métricas de defectos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="frameworks-section content-card">
+                    <h3>Marcos de Trabajo Referenciales</h3>
+                    <div class="frameworks-grid">
+                        <div class="framework-item">
+                            <h4>Scrum</h4>
+                            <p>Framework ágil que promueve la entrega iterativa e incremental con revisiones continuas de calidad.</p>
+                        </div>
+                        <div class="framework-item">
+                            <h4>Extreme Programming (XP)</h4>
+                            <p>Enfatiza las pruebas, la simplicidad del diseño y la retroalimentación continua.</p>
+                        </div>
+                        <div class="framework-item">
+                            <h4>DevOps</h4>
+                            <p>Cultura que integra desarrollo y operaciones para mejorar la calidad y velocidad de entrega.</p>
+                        </div>
+                        <div class="framework-item">
+                            <h4>CMMI</h4>
+                            <p>Modelo de madurez que guía la mejora de procesos organizacionales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instrumentos Section -->
+        <section id="instrumentos" class="section instrumentos-section">
+            <div class="container">
+                <h2 class="section-title">Instrumentos de Calidad de Software</h2>
+                
+                <div class="instruments-intro content-card">
+                    <p>
+                        Los instrumentos de calidad son herramientas y plantillas que permiten medir, evaluar y 
+                        documentar los aspectos de calidad durante el ciclo de vida del desarrollo de software.
+                    </p>
+                </div>
+
+                <div class="instruments-grid">
+                    <div class="instrument-card">
+                        <h3>1. Plan de Pruebas</h3>
+                        <p class="instrument-description">
+                            Documento que describe el alcance, enfoque, recursos y cronograma de las actividades 
+                            de pruebas.
+                        </p>
+                        <div class="instrument-details">
+                            <h4>Elementos clave:</h4>
+                            <ul>
+                                <li>Objetivos de prueba</li>
+                                <li>Alcance (funcionalidades a probar)</li>
+                                <li>Estrategia de pruebas (unitarias, integración, sistema)</li>
+                                <li>Criterios de entrada y salida</li>
+                                <li>Recursos necesarios (humanos y técnicos)</li>
+                                <li>Cronograma de ejecución</li>
+                                <li>Riesgos y mitigación</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="instrument-card">
+                        <h3>2. Casos de Prueba</h3>
+                        <p class="instrument-description">
+                            Conjunto de condiciones y variables que determinan si un sistema funciona correctamente.
+                        </p>
+                        <div class="instrument-details">
+                            <h4>Estructura:</h4>
+                            <ul>
+                                <li>ID del caso de prueba</li>
+                                <li>Descripción</li>
+                                <li>Precondiciones</li>
+                                <li>Pasos de ejecución</li>
+                                <li>Datos de entrada</li>
+                                <li>Resultado esperado</li>
+                                <li>Resultado obtenido</li>
+                                <li>Estado (Pasó/Falló)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="instrument-card">
+                        <h3>3. Checklist de Revisión de Código</h3>
+                        <p class="instrument-description">
+                            Lista de verificación para evaluar la calidad del código durante las revisiones por pares.
+                        </p>
+                        <div class="instrument-details">
+                            <h4>Criterios de verificación:</h4>
+                            <ul>
+                                <li>Cumplimiento de estándares de codificación</li>
+                                <li>Nombres descriptivos y significativos</li>
+                                <li>Funciones con responsabilidad única</li>
+                                <li>Código duplicado eliminado</li>
+                                <li>Manejo adecuado de excepciones</li>
+                                <li>Comentarios donde sea necesario</li>
+                                <li>Pruebas unitarias incluidas</li>
+                                <li>Sin código comentado innecesario</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="instrument-card">
+                        <h3>4. Matriz de Trazabilidad</h3>
+                        <p class="instrument-description">
+                            Herramienta que relaciona los requisitos con los casos de prueba y defectos encontrados.
+                        </p>
+                        <div class="instrument-details">
+                            <h4>Componentes:</h4>
+                            <ul>
+                                <li>ID de requisito</li>
+                                <li>Descripción del requisito</li>
+                                <li>Prioridad</li>
+                                <li>Casos de prueba asociados</li>
+                                <li>Estado de pruebas</li>
+                                <li>Defectos relacionados</li>
+                                <li>Cobertura de pruebas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="instrument-card">
+                        <h3>5. Reporte de Defectos</h3>
+                        <p class="instrument-description">
+                            Plantilla estandarizada para documentar errores encontrados durante las pruebas.
+                        </p>
+                        <div class="instrument-details">
+                            <h4>Información incluida:</h4>
+                            <ul>
+                                <li>ID del defecto</li>
+                                <li>Título descriptivo</li>
+                                <li>Severidad (Crítica, Alta, Media, Baja)</li>
+                                <li>Prioridad</li>
+                                <li>Pasos para reproducir</li>
+                                <li>Comportamiento esperado vs. actual</li>
+                                <li>Entorno (OS, navegador, versión)</li>
+                                <li>Capturas de pantalla/logs</li>
+                                <li>Estado (Abierto, En progreso, Resuelto)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="instrument-card">
+                        <h3>6. Métricas de Calidad</h3>
+                        <p class="instrument-description">
+                            Dashboard de indicadores cuantitativos que miden la calidad del software.
+                        </p>
+                        <div class="instrument-details">
+                            <h4>Métricas principales:</h4>
+                            <ul>
+                                <li>Cobertura de código (%)</li>
+                                <li>Densidad de defectos (defectos/KLOC)</li>
+                                <li>Complejidad ciclomática</li>
+                                <li>Deuda técnica</li>
+                                <li>Tiempo medio de resolución de defectos</li>
+                                <li>Tasa de defectos en producción</li>
+                                <li>Índice de mantenibilidad</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="instrument-card">
+                        <h3>7. Documento de Arquitectura</h3>
+                        <p class="instrument-description">
+                            Especificación técnica que describe la estructura y diseño del sistema.
+                        </p>
+                        <div class="instrument-details">
+                            <h4>Contenido:</h4>
+                            <ul>
+                                <li>Visión general de la arquitectura</li>
+                                <li>Diagramas de componentes</li>
+                                <li>Patrones de diseño utilizados</li>
+                                <li>Decisiones arquitectónicas</li>
+                                <li>Tecnologías y frameworks</li>
+                                <li>Requisitos no funcionales</li>
+                                <li>Consideraciones de seguridad</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="instrument-card">
+                        <h3>8. Guía de Estándares de Codificación</h3>
+                        <p class="instrument-description">
+                            Documento que establece las convenciones y mejores prácticas de programación del equipo.
+                        </p>
+                        <div class="instrument-details">
+                            <h4>Aspectos cubiertos:</h4>
+                            <ul>
+                                <li>Convenciones de nomenclatura</li>
+                                <li>Estructura de archivos y carpetas</li>
+                                <li>Formato y estilo de código</li>
+                                <li>Uso de comentarios</li>
+                                <li>Manejo de errores</li>
+                                <li>Mejores prácticas por lenguaje</li>
+                                <li>Herramientas de análisis estático</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-section content-card">
+                    <h3>Herramientas TIC Recomendadas</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <h4>Testing</h4>
+                            <p>JUnit, Jest, Selenium, Postman, JMeter</p>
+                        </div>
+                        <div class="tool-item">
+                            <h4>Análisis de Código</h4>
+                            <p>SonarQube, ESLint, Checkstyle, PMD</p>
+                        </div>
+                        <div class="tool-item">
+                            <h4>Gestión de Defectos</h4>
+                            <p>Jira, Bugzilla, Mantis, Azure DevOps</p>
+                        </div>
+                        <div class="tool-item">
+                            <h4>CI/CD</h4>
+                            <p>Jenkins, GitLab CI, GitHub Actions, CircleCI</p>
+                        </div>
+                        <div class="tool-item">
+                            <h4>Control de Versiones</h4>
+                            <p>Git, GitHub, GitLab, Bitbucket</p>
+                        </div>
+                        <div class="tool-item">
+                            <h4>Documentación</h4>
+                            <p>Swagger, Confluence, Markdown, Javadoc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PSP Section -->
+        <section id="proceso-personal" class="section psp-section">
+            <div class="container">
+                <h2 class="section-title">Proceso Personal de Desarrollo de Software (PSP)</h2>
+                
+                <div class="psp-intro content-card">
+                    <p>
+                        El Proceso Personal de Desarrollo de Software (Personal Software Process - PSP) es una 
+                        metodología estructurada diseñada por Watts Humphrey que ayuda a los desarrolladores 
+                        individuales a mejorar su desempeño mediante la medición y análisis de su trabajo.
+                    </p>
+                </div>
+
+                <div class="psp-objectives content-card">
+                    <h3>Objetivos del PSP</h3>
+                    <ul>
+                        <li>Mejorar la estimación y planificación personal</li>
+                        <li>Aumentar la productividad del desarrollador</li>
+                        <li>Reducir defectos en el código</li>
+                        <li>Establecer una base cuantitativa para la mejora continua</li>
+                        <li>Desarrollar disciplina en el proceso de desarrollo</li>
+                    </ul>
+                </div>
+
+                <div class="psp-phases">
+                    <h3>Fases del PSP</h3>
+                    
+                    <div class="phase-card">
+                        <div class="phase-header">
+                            <span class="phase-number">Fase 1</span>
+                            <h4>Planificación</h4>
+                        </div>
+                        <div class="phase-content">
+                            <p>
+                                Definir los requisitos del proyecto, estimar el tamaño del software y el tiempo 
+                                necesario basándose en datos históricos personales.
+                            </p>
+                            <ul>
+                                <li>Análisis de requisitos</li>
+                                <li>Estimación de tamaño (líneas de código)</li>
+                                <li>Estimación de tiempo por fase</li>
+                                <li>Registro de plan inicial</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-header">
+                            <span class="phase-number">Fase 2</span>
+                            <h4>Diseño</h4>
+                        </div>
+                        <div class="phase-content">
+                            <p>
+                                Crear el diseño de alto y bajo nivel del software, documentando decisiones de 
+                                arquitectura y componentes.
+                            </p>
+                            <ul>
+                                <li>Diseño de arquitectura</li>
+                                <li>Diseño detallado de componentes</li>
+                                <li>Revisión de diseño</li>
+                                <li>Documentación de decisiones</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-header">
+                            <span class="phase-number">Fase 3</span>
+                            <h4>Codificación</h4>
+                        </div>
+                        <div class="phase-content">
+                            <p>
+                                Implementar el diseño en código, siguiendo estándares establecidos y registrando 
+                                el tiempo invertido.
+                            </p>
+                            <ul>
+                                <li>Implementación del código</li>
+                                <li>Seguimiento de estándares</li>
+                                <li>Registro de tiempo por actividad</li>
+                                <li>Anotación de defectos encontrados</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-header">
+                            <span class="phase-number">Fase 4</span>
+                            <h4>Revisión de Código</h4>
+                        </div>
+                        <div class="phase-content">
+                            <p>
+                                Revisar sistemáticamente el código antes de las pruebas para detectar defectos 
+                                tempranamente.
+                            </p>
+                            <ul>
+                                <li>Revisión personal del código</li>
+                                <li>Uso de checklist de revisión</li>
+                                <li>Registro de defectos encontrados</li>
+                                <li>Corrección inmediata de problemas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-header">
+                            <span class="phase-number">Fase 5</span>
+                            <h4>Compilación y Pruebas</h4>
+                        </div>
+                        <div class="phase-content">
+                            <p>
+                                Compilar el código y ejecutar pruebas para verificar que cumple con los requisitos.
+                            </p>
+                            <ul>
+                                <li>Compilación del código</li>
+                                <li>Ejecución de pruebas unitarias</li>
+                                <li>Registro de defectos de compilación</li>
+                                <li>Corrección de errores encontrados</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-header">
+                            <span class="phase-number">Fase 6</span>
+                            <h4>Post-mortem (Análisis)</h4>
+                        </div>
+                        <div class="phase-content">
+                            <p>
+                                Analizar los datos recolectados durante el proyecto para identificar áreas de mejora.
+                            </p>
+                            <ul>
+                                <li>Comparación de tiempos estimados vs. reales</li>
+                                <li>Análisis de defectos por fase</li>
+                                <li>Cálculo de productividad</li>
+                                <li>Identificación de lecciones aprendidas</li>
+                                <li>Actualización de base de datos personal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="psp-metrics content-card">
+                    <h3>Métricas Personales del PSP</h3>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <h4>Tamaño del Programa</h4>
+                            <p>Líneas de código (LOC) - Base, Eliminadas, Modificadas, Añadidas, Reutilizadas, Total</p>
+                        </div>
+                        <div class="metric-item">
+                            <h4>Tiempo Invertido</h4>
+                            <p>Minutos dedicados a cada fase del desarrollo</p>
+                        </div>
+                        <div class="metric-item">
+                            <h4>Defectos</h4>
+                            <p>Número, tipo, fase de inyección y remoción de cada defecto</p>
+                        </div>
+                        <div class="metric-item">
+                            <h4>Productividad</h4>
+                            <p>LOC por hora de desarrollo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="psp-benefits content-card">
+                    <h3>Beneficios de Aplicar PSP</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <h4>Mejora en Estimaciones</h4>
+                            <p>
+                                Con datos históricos personales, las estimaciones de tiempo y esfuerzo se vuelven 
+                                más precisas con cada proyecto.
+                            </p>
+                        </div>
+                        <div class="benefit-item">
+                            <h4>Reducción de Defectos</h4>
+                            <p>
+                                La revisión sistemática y el registro de defectos ayudan a identificar patrones 
+                                y prevenir errores recurrentes.
+                            </p>
+                        </div>
+                        <div class="benefit-item">
+                            <h4>Autoconocimiento</h4>
+                            <p>
+                                El desarrollador comprende sus fortalezas y debilidades, permitiendo un desarrollo 
+                                profesional dirigido.
+                            </p>
+                        </div>
+                        <div class="benefit-item">
+                            <h4>Base para TSP</h4>
+                            <p>
+                                El PSP es la base para el Team Software Process (TSP), escalando las mejoras al 
+                                nivel de equipo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="psp-implementation content-card">
+                    <h3>Implementación Práctica</h3>
+                    <p>
+                        Para aplicar PSP efectivamente en tu desarrollo personal:
+                    </p>
+                    <ol>
+                        <li>Crea plantillas para registrar datos de planificación, tiempo y defectos</li>
+                        <li>Establece el hábito de registrar información durante el desarrollo, no después</li>
+                        <li>Realiza el análisis post-mortem después de cada proyecto, sin importar su tamaño</li>
+                        <li>Mantén una base de datos personal de proyectos para referencia histórica</li>
+                        <li>Revisa tus métricas periódicamente para identificar tendencias</li>
+                        <li>Ajusta tu proceso basándote en los hallazgos del análisis</li>
+                        <li>Sé honesto en tus registros para obtener datos útiles</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusiones Section -->
+        <section id="conclusiones" class="section conclusiones-section">
+            <div class="container">
+                <h2 class="section-title">Conclusiones</h2>
+                
+                <div class="content-card">
+                    <p>
+                        La aplicación de buenas prácticas de calidad en el desarrollo de software no es simplemente 
+                        un requisito académico o profesional, sino una necesidad fundamental para crear sistemas 
+                        robustos, mantenibles y que satisfagan las necesidades del usuario final. A través de este 
+                        documento, hemos explorado los fundamentos teóricos y prácticos que sustentan la calidad 
+                        del software moderno.
+                    </p>
+
+                    <h3>Principales Hallazgos</h3>
+                    <p>
+                        <strong>1. La calidad es multidimensional:</strong> No basta con que el software funcione; 
+                        debe ser confiable, usable, eficiente, mantenible y portable. Cada una de estas dimensiones 
+                        requiere atención específica y medición continua.
+                    </p>
+
+                    <p>
+                        <strong>2. Las buenas prácticas son esenciales:</strong> La implementación de prácticas como 
+                        revisión de código, pruebas automatizadas, integración continua y estándares de codificación 
+                        no solo mejora la calidad del producto final, sino que optimiza el proceso de desarrollo y 
+                        reduce costos a largo plazo.
+                    </p>
+
+                    <p>
+                        <strong>3. La documentación técnica es crucial:</strong> Una documentación adecuada reduce 
+                        la curva de aprendizaje, facilita el mantenimiento y permite la escalabilidad del proyecto. 
+                        Los instrumentos de calidad diseñados (planes de prueba, casos de prueba, checklists, etc.) 
+                        proporcionan estructura y consistencia al proceso.
+                    </p>
+
+                    <p>
+                        <strong>4. El PSP es transformador:</strong> El Proceso Personal de Desarrollo de Software 
+                        ofrece un marco estructurado para que los desarrolladores mejoren continuamente. Al medir 
+                        y analizar nuestro propio desempeño, podemos identificar patrones, predecir mejor nuestros 
+                        tiempos y reducir significativamente los defectos.
+                    </p>
+
+                    <p>
+                        <strong>5. Los marcos de trabajo guían, no limitan:</strong> Frameworks como Scrum, XP, 
+                        DevOps y CMMI proporcionan directrices probadas, pero deben adaptarse al contexto específico 
+                        de cada proyecto y organización.
+                    </p>
+
+                    <h3>Reflexiones Finales</h3>
+                    <p>
+                        La calidad del software no es un objetivo que se alcanza una vez, sino un compromiso continuo 
+                        que requiere disciplina, medición y mejora constante. Cada línea de código que escribimos, 
+                        cada prueba que ejecutamos, cada revisión que realizamos, contribuye a construir software 
+                        que genera valor real para los usuarios.
+                    </p>
+
+                    <p>
+                        Como futuros tecnólogos en Análisis y Desarrollo de Sistemas de Información, nuestra 
+                        responsabilidad va más allá de hacer que el código funcione. Debemos ser guardianes de la 
+                        calidad, promotores de las mejores prácticas y defensores de procesos que garanticen la 
+                        excelencia técnica.
+                    </p>
+
+                    <p>
+                        La implementación de estas prácticas y el uso de los instrumentos de calidad presentados 
+                        nos prepara no solo para cumplir con los estándares de la industria, sino para superarlos, 
+                        creando software que sea técnicamente sólido, mantenible a largo plazo y que verdaderamente 
+                        resuelva las necesidades de quienes lo utilizan.
+                    </p>
+
+                    <p>
+                        El camino hacia la excelencia en el desarrollo de software comienza con el compromiso 
+                        personal de cada desarrollador por mejorar continuamente. Con las herramientas, conocimientos 
+                        y disciplina adecuados, podemos contribuir a elevar el estándar de calidad en la industria 
+                        del software y entregar soluciones que marquen una diferencia significativa.
+                    </p>
+                </div>
+
+                <div class="final-quote content-card">
+                    <blockquote>
+                        "La calidad no es un acto, es un hábito."
+                        <footer>— Aristóteles</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SENA</h3>
+                    <p>Servicio Nacional de Aprendizaje</p>
+                    <p>Formación profesional para el desarrollo de Colombia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Programa</h3>
+                    <p>Análisis y Desarrollo de Sistemas de Información</p>
+                    <p>Ficha: 2885494</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Evidencia</h3>
+                    <p>GA11-220501098-AA1-EV02</p>
+                    <p>Aplicación de Buenas Prácticas de Calidad</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SENA - Todos los derechos reservados | Elaborado por: Jose</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
